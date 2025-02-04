@@ -30,10 +30,10 @@ function App() {
       </div>
       <div className='strengths section'>
         <div className='circles'>
-          <StrengthCard id="01" title="branding" description="from logos and colors to fonts and styles, making brands look cohesive, professional, and fun to engage with" />
-          <StrengthCard id="02" title="illustration" description="from logos and colors to fonts and styles, making brands look cohesive, professional, and fun to engage with" />
-          <StrengthCard id="03" title="web design" description="from logos and colors to fonts and styles, making brands look cohesive, professional, and fun to engage with" />
-          <StrengthCard id="04" title="social media" description="from logos and colors to fonts and styles, making brands look cohesive, professional, and fun to engage with" />
+          <StrengthCard id="01" title="branding" description="from logos and colors to fonts and styles, making brands look cohesive, professional, and fun to engage with." />
+          <StrengthCard id="02" title="illustration" description="whether it's digital artwork, icons, or custom graphics, I love creating visuals that bring ideas to life." />
+          <StrengthCard id="03" title="web design" description="creating websites that are visually appealing and intuitive for visitors." />
+          <StrengthCard id="04" title="social media" description="eye-catching and engaging content. posts, stories, banners, and ads." />
         </div>
       </div>
     </>
