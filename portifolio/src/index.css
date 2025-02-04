@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Poppins;
+    src: url('./assets/media/fonts/Poppins-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('./assets/media/fonts/Inter-VariableFont_opsz\,wght.ttf');
+}
+
+html, body {
+    color: #FFF;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #000;
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.section {
+    width: 100%;
+    min-height: 900px;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: solid 1px #FFF;
+    padding: 20px;
+}
+
+.name {  
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 32pt;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    margin-left: 4vw;
+}
+
+.name:hover {    
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.options {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.option {
+    font-family: Poppins;
+    font-weight: bold;
+    margin-left: 90px;
+    font-size: 18pt;
+    transition: 200ms;
+}
+
+.option:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    height: 100vh;
+    background-color: #000;
+    background: radial-gradient(ellipse at top 10% left 8%, #ff6abd 10%, transparent 40%),
+                radial-gradient(ellipse at top 100% right 20%, #ff6abd 00%, transparent 50%),
+                radial-gradient(ellipse at top 50% left 40%, rgba(255, 106, 189, .6) 0%, transparent 40%);   
+}
