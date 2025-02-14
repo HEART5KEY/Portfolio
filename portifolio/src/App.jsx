@@ -58,7 +58,7 @@ function App() {
             }
           </div>
         </div>
-        <div className='highlights-more' onClick={() => {navigate('/Portfolio/Works')}}>See more works →</div>
+        <div className='highlights-more' onClick={() => {navigate('/Portfolio/Works')}}>see more works</div>
       </div>
     </>
   )

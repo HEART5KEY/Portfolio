@@ -9,12 +9,12 @@
 
 .contact-title {
     position: absolute;
-    top: .5vw;
+    top: 3vw;
     left: 0;
     
     font-family: Poppins;
     font-weight: bold;
-    font-size: 32pt;
+    font-size: 80px;
     color: transparent;
     -webkit-text-stroke: .5px white;
     margin-left: 4vw;
