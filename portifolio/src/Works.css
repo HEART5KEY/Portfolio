@@ -1,0 +1,377 @@
+.category-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-background {
+    transition: 1000ms;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: radial-gradient(ellipse at top 10% left 8%, #ff6abd 10%, transparent 40%),
+                radial-gradient(ellipse at top 100% right 20%, #ff6abd 00%, transparent 50%),
+                radial-gradient(ellipse at top 50% left 40%, rgba(255, 106, 189, .6) 0%, transparent 40%);   
+
+
+}
+
+.header-grid {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.category {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(40px);
+    transition: 500ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 60px;
+    color: transparent;
+    -webkit-text-stroke: .5px white;
+    z-index: 2;
+    user-select: none;
+}
+
+.category:nth-child(1) {
+    left: 20%;
+    top: 20%;
+}
+
+.category:nth-child(2) {
+    right: 20%;
+    bottom: calc(20% - 100px);
+}
+
+.category:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, .14);
+    cursor: pointer;
+    color: #FFF;
+    transition: 200ms;
+}
+
+.back-arrow {
+    display: none;
+}
+
+.projects {
+    transition: 500ms;
+    position: absolute;
+    overflow: auto;
+    width: 80%;
+    height: 100vh;
+}
+
+.projects::-webkit-scrollbar {
+    width: 7px;
+}
+
+.projects::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.projects::-webkit-scrollbar-track {
+    width: 1px;
+    background: linear-gradient(90deg,  rgba(2,0,36,0) 0%,
+                                        rgba(255,255,255,0) 49%,
+                                        rgba(255,255,255,.8) 49%,
+                                        rgba(255,255,255,.8) 51%,
+                                        rgba(255,255,255,0) 51%);
+}
+
+.projects > div {
+    display: none;
+    width: 100%;
+}
+
+.project {
+    direction: ltr;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10vh;
+    overflow-x: hidden;
+}
+
+.project-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(15px);
+}
+
+.social-border {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    z-index: 2;
+    filter: drop-shadow(10px 10px 20px black);
+    transition: 200ms;
+}
+
+.social-border:hover {
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+.social-header {
+    width: 100%;
+}
+
+.social-photo {
+    position: relative;
+    height: 50px;
+}
+
+.social-photo img {
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 4;
+}
+
+.social-post {
+    position: relative;
+    display: flex;
+    max-width: 65vh;
+    overflow: hidden;
+}
+
+.social-post img {
+    max-height: 65vh;
+    max-width: 65vh;
+    transition: 200ms;
+    z-index: 1;
+}
+
+.social-carousel {
+    display: flex;
+    position: relative;
+    right: 0;
+    transition: 400ms;
+}
+
+.carousel-arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, .8);
+    top: calc(50% - 15px);
+
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    transition: 200ms;
+    user-select: none;
+    z-index: 3;
+}
+
+.carousel-arrow:nth-of-type(1) {
+    left: 10px;
+    padding-right: 2px;
+}
+
+.carousel-arrow:nth-of-type(3) {
+    left: calc(65vh - 40px);
+    padding-left: 2px;
+}
+
+.carousel-arrow:hover {
+    cursor: pointer;
+    background-color: #FFF;
+    transition: 200ms;
+}
+
+.carousel-image-container {
+    width: 65vh;
+    aspect-ratio: 1/1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-image-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(15px);
+}
+
+/* INSTAGRAM */
+
+.social-instagram {
+    background-color: #FFF;
+    color: #000;
+}
+
+.social-instagram > .social-header {
+    padding: 20px;
+    display: flex;
+}
+
+.instagram-name {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    align-self: center;
+}
+
+.instagram-story {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    background: linear-gradient(45deg, rgba(249,206,52,1) 0%, rgba(238,42,123,1) 50%, rgba(98,40,215,1) 100%);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.instagram-story::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: block;
+    width: 54px;
+    height: 54px;
+    background: #FFF;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+/* XUÍTER */
+
+.social-twitter {
+    background-color: #000;
+    padding: 0 30px;
+    border-radius: 30px;
+}
+
+.social-twitter > .social-header {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.twitter-profile {
+    display: flex;
+}
+
+.twitter-open {
+    margin-right: 10px;
+    justify-self: right;
+    display: flex;
+    align-items: center;
+}
+
+.open-button {
+    color: #000;
+    background-color: #FFF;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-family: 'Inter';
+    font-weight: 650;
+    margin-bottom: 5px;
+}
+
+.open-button:hover {
+    cursor: pointer;
+}
+
+.twitter-info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.twitter-info > p {
+    margin: 0;
+}
+
+.twitter-name {
+    font-weight: 550;
+}
+
+.twitter-at {
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 13px;
+    margin-top: 3px !important;
+}
+
+.twitter-title {
+    margin-top: 10px;
+    font-size: 18px;
+    grid-column: 1 / 3;
+}
+
+
+
+.project-separator {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 3vw;
+    color: #FFF;
+}
+
+.sports-separator {
+    background-color: #999901;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+}
+
+.projects-carousel {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.project-carousel-image {
+    margin-right: 200px;
+}

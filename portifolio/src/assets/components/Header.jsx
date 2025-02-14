@@ -11,8 +11,8 @@ const Header = () => {
             </div>
             <div className="options">
                 <span className="option" onClick={() => {navigate('/Portfolio/About')}}>about me</span>
-                <span className="option">works</span>
-                <span className="option">contact me</span>
+                <span className="option" onClick={() => {navigate('/Portfolio/Works')}}>works</span>
+                <span className="option" onClick={() => {navigate('/Portfolio/Contact')}}>contact me</span>
             </div>
         </div>
     )

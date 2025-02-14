@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: Inter;
-    src: url('./assets/media/fonts/Inter-VariableFont_opsz\,wght.ttf');
+    src: url('./assets/media/fonts/Inter.ttf');
 }
 
 html, body {
@@ -42,10 +42,13 @@ div {
     color: transparent;
     -webkit-text-stroke: .5px white;
     margin-left: 4vw;
+    width: fit-content;
+    transition: 200ms;
 }
 
 .name:hover {    
     cursor: pointer;
+    color: #FFF;
     transition: 200ms;
 }
 
@@ -78,4 +81,20 @@ div {
     background: radial-gradient(ellipse at top 10% left 8%, #ff6abd 10%, transparent 40%),
                 radial-gradient(ellipse at top 100% right 20%, #ff6abd 00%, transparent 50%),
                 radial-gradient(ellipse at top 50% left 40%, rgba(255, 106, 189, .6) 0%, transparent 40%);   
+}
+
+.tag {
+    padding: 1px 30px;
+    border: solid 1px #FFF;
+    border-radius: 10px;
+    margin-right: 30px;
+    font-family: Inter;
+    font-size: 16pt;
+    margin-bottom: 15px;
+    transition: 200ms;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
 }

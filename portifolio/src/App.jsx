@@ -2,8 +2,14 @@ import './App.css'
 import './index.css'
 import Header from './assets/components/Header'
 import StrengthCard from './assets/components/StrengthCard'
+import { useState } from 'react'
+import Tags from './assets/components/Tags'
+import { projects } from './works.json'
+import { getImageurl } from './methods'
+import { useNavigate } from 'react-router'
 
 function App() {
+  const navigate = useNavigate();
   return (
     <>
       <div id="main" className='main section'>
@@ -33,8 +39,29 @@ function App() {
           <StrengthCard id="04" title="social media" description="eye-catching and engaging content. posts, stories, banners, and ads." />
         </div>
       </div>
+      <div className='highlights section'>
+        <Tags />
+        <div className=''>
+          <div className='highlights-title'>
+            highlights  
+          </div>  
+          <div className='highlights-container'>
+            {
+              projects.filter((proj) => {return proj.highlight}).map((project) => {
+                return (
+                  <div onClick={() => {navigate(`/Portfolio/Works?personal=${project.personal}&id=${project.key}`)}} className='highlight-container'>
+                    {project.media.length > 1 ? <div className='highlight-plus'>+</div> : ''}
+                    <img className='highlight-thumbnail' src={getImageurl(`./assets/media/works/${project.media[0]}.jpg`)} alt='highlight-thumbnail' />
+                  </div>
+                )
+              })
+            }
+          </div>
+        </div>
+        <div className='highlights-more' onClick={() => {navigate('/Portfolio/Works')}}>See more works →</div>
+      </div>
     </>
   )
 }
 
-export default App
+export default App;

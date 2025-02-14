@@ -1,0 +1,121 @@
+{
+    "projects": [
+        {
+            "key": 0,
+            "title": "Quer dominar rankings de marketplace? Na Revinn Estratégias, ajudamos seu hotel a se destacar com otimizações certeiras!\n\nMais visibilidade, Mais cliques, Mais conversão. Se o seu hotel não está performando como deveria, a Revinn tem a solução!\n\n#Hotelaria #Visibilidade #GestãoHoteleira",
+            "social": "instagram",
+            "media": [
+                "revinn01",
+                "revinn02",
+                "revinn03",
+                "revinn04"
+            ],
+            "highlight": true,
+            "personal": false,
+            "tags": [
+                "revinn"
+            ]
+        },
+        {
+            "key": 1,
+            "title": "Na Revinn Estratégias, ajudamos hotéis a precificar de forma inteligente, garantindo equilíbrio entre valor percebido e competitividade no mercado. Afinal, o preço de um hotel não é apenas um número, mas sim um reflexo de tudo oferecido.\n\nQuer aumentar sua lucratividade sem perder competitividade? Fale com nossos especialistas!\n\n#Hotelaria #Precificação #GestãoHoteleira #RevenueManagement #Estratégias",
+            "social": "instagram",
+            "media": [
+                "revinn11",
+                "revinn12",
+                "revinn13"
+            ],
+            "highlight": false,
+            "personal": false,
+            "tags": [
+                "revinn"
+            ]
+        },
+        {
+            "key": 2,
+            "title": "Cuidar da operação do seu hotel é fundamental – e nós cuidamos do resto.\n\nCom a Revinn Estratégias, seu time conta com um suporte técnico avançado para resolver pendências críticas de implantação, distribuição e conectividade.\n\nChannel Manager e RMS? Soluções ágeis e sem necessidade de interações com múltiplos fornecedores.\n\nFoco no essencial: fortalecemos sua operação e garantimos resultados mais consistentes.\n\nQuer saber como transformamos o suporte da sua operação? Fale com a Revinn.",
+            "social": "instagram",
+            "media": [
+                "revinn21",
+                "revinn22",
+                "revinn23",
+                "revinn24"
+            ],
+            "highlight": false,
+            "personal": false,
+            "tags": [
+                "revinn"
+            ]
+        },
+        {
+            "key": 3,
+            "title": "Parabéns Expedia Group por conquistar o melhor desempenho de 2024 por um hotel independente de SP! Que realização!",
+            "social": "instagram",
+            "media": [
+                "revinn31"
+            ],
+            "highlight": false,
+            "personal": false,
+            "tags": [
+                "revinn"
+            ]
+        },
+        {
+            "key": 4,
+            "title": "Seu hotel merece destaque no mercado.\nCom a Revinn, você obtém integração eficiente aos principais canais de venda, monitoramento constante e estratégias direcionadas para conquistar resultados reais.\n\nQuer saber mais? Fale conosco.\n\n#GestaoHoteleira #Hotelaria #Visibilidade #Conectividade",
+            "social": "instagram",
+            "media": [
+                "revinn41",
+                "revinn42"
+            ],
+            "highlight": false,
+            "personal": false,
+            "tags": [
+                "revinn"
+            ]
+        },        
+        {
+            "key": 5,
+            "title": "A Revinn Estratégias te convida para um evento exclusivo!\n\nSe você quer dominar os marketplaces e transformar seu hotel em referência, chegou a hora! No dia 20 de março, a Revinn Estratégias promove um evento imperdível para profissionais e investidores da hotelaria, com insights estratégicos que aumentam sua conversão e ROI.\n\n20 de março de 2025\nInscrições gratuitas – Vagas limitadas!\n\nJunte-se a especialistas que estão revolucionando o setor e leve seu negócio para outro nível!\n\nGaranta sua vaga agora! Ingressos disponíveis nos stories.\n\n#Hotelaria #Marketplaces #AltaPerformance #Evento",
+            "social": "instagram",
+            "media": [
+                "revinn51",
+                "revinn52",
+                "revinn53",
+                "revinn54"
+            ],
+            "highlight": true,
+            "personal": false,
+            "tags": [
+                "revinn"
+            ]
+        },       
+        {
+            "key": 6,
+            "title": "congrats on the nomination Alexander Isak! 🤍 NUFC",
+            "social": "twitter",
+            "media": [
+                "ISAK"
+            ],
+            "highlight": true,
+            "personal": true,
+            "tags": [
+                "sports"
+            ]
+        },       
+        {
+            "key": 7,
+            "title": "what a landmark for Ruben Dias!🙂‍↕️🩵 MCFC",
+            "social": "twitter",
+            "media": [
+                "RUBEN"
+            ],
+            "highlight": true,
+            "personal": true,
+            "tags": [
+                "sports"
+            ]
+        }
+
+    ]
+}

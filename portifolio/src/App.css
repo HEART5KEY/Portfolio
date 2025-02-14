@@ -172,3 +172,69 @@
   top: calc(25vw - 160px);
   left: calc(25vw - 50px);
 }
+
+.highlights {
+  padding: 200px 2vw;
+  position: relative;
+}
+
+.highlights-title {
+  margin: 50px 5vw;
+  font-size: 32pt;
+  margin-bottom: 0;
+}
+
+.highlights-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.highlight-container {
+  position: relative;
+  transition: 200ms;
+  height: fit-content;
+}
+
+.highlight-container:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 200ms;
+}
+
+.highlight-plus {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 0 10px;
+  font-size: 2vw;
+  transition: 200ms;
+}
+
+.highlight-container:hover .highlight-plus {
+  background-color: rgba(120, 120, 120, .5);
+  transition: 200ms;
+}
+
+.highlight-thumbnail {
+  max-width: 23vw;
+  max-height: 80vh;
+}
+
+.highlights-more {
+  position: absolute;
+  bottom: 5vh;
+  right: 5vw;
+  color: #000;
+  font-size: 25px;
+  background-color: #FFF;
+  padding: 3px 20px;
+  transition: 200ms;
+}
+
+.highlights-more:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  transition: 200ms;
+}
