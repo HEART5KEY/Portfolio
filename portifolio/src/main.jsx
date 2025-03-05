@@ -10,11 +10,11 @@ import Contact from './Contact.jsx';
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   <Routes>
-    <Route path="/Portfolio" element={<App />} /> 
-    <Route path="/Portfolio/About" element={<About />} /> 
-    <Route path="/Portfolio/Works" element={<Works />} />
-    <Route path="/Portfolio/Contact" element={<Contact />} />
-    <Route path="/Portfolio/*" element={<div>not found</div>} /> 
+    <Route path="/" element={<App />} /> 
+    <Route path="/About" element={<About />} /> 
+    <Route path="/Works" element={<Works />} />
+    <Route path="/Contact" element={<Contact />} />
+    <Route path="/*" element={<div>not found</div>} /> 
   </Routes>
   </BrowserRouter>
 )
