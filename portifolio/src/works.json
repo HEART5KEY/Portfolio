@@ -89,7 +89,7 @@
             "tags": [
                 "revinn"
             ]
-        },       
+        }, 
         {
             "key": 6,
             "title": "congrats on the nomination Alexander Isak! 🤍 NUFC",
@@ -114,6 +114,38 @@
             "personal": true,
             "tags": [
                 "sports"
+            ]
+        },        
+        {
+            "key": 8,
+            "title": "",
+            "social": "instagram",
+            "media": [
+                "UAM10",
+                "UAM11",
+                "UAM12",
+                "UAM13"
+            ],
+            "highlight": false,
+            "personal": false,
+            "tags": [
+                "UAM"
+            ]
+        },          
+        {
+            "key": 9,
+            "title": "",
+            "social": "instagram",
+            "media": [
+                "UAM20",
+                "UAM21",
+                "UAM22",
+                "UAM23"
+            ],
+            "highlight": false,
+            "personal": false,
+            "tags": [
+                "UAM"
             ]
         }
     ]
