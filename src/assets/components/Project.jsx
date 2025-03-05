@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import anna from '../../assets/media/images/anna.jpg'
-import { getImageurl } from "../../methods";
 
 const Project = ({ media, social, title, id }) => {
     const [current, setCurrent] = useState(0);
@@ -23,7 +22,7 @@ const Project = ({ media, social, title, id }) => {
 
     return (        
         <div id={id} className={`project`}>
-            <div className="project-background" style={{backgroundImage: `url(${getImageurl(`./assets/media/works/${media[0]}.jpg`)})`}}></div>
+            <div className="project-background" style={{backgroundImage: `url(${`/Portfolio/works/${media[0]}.jpg`})`}}></div>
             <div className={`social-border social-${social}`}>
                 <div className='social-header'>
                     {social === 'instagram' ?
@@ -51,13 +50,13 @@ const Project = ({ media, social, title, id }) => {
                 <div className="social-post">
                     <div className="carousel-arrow" onClick={(e) => (handleChange(e, false))} style={current === 0 ? {display: 'none'} : {display: 'flex'}}>‹</div>
                     {media.length === 1 ?
-                        <img src={getImageurl(`./assets/media/works/${media[0]}.jpg`)} alt='highlight-thumbnail' /> :
+                        <img src={`/Portfolio/works/${media[0]}.jpg`} alt='highlight-thumbnail' /> :
                         <div className="social-carousel">
                             {media.map((picture) => {
                                 return (
                                     <div className="carousel-image-container">
-                                        <div className="carousel-image-background" style={{backgroundImage: `url(${getImageurl(`./assets/media/works/${picture}.jpg`)})`}}></div>
-                                        <img src={getImageurl(`./assets/media/works/${picture}.jpg`)} alt='highlight-thumbnail' />
+                                        <div className="carousel-image-background" style={{backgroundImage: `url(${`/Portfolio/works/${picture}.jpg`})`}}></div>
+                                        <img src={`/Portfolio/works/${picture}.jpg`} alt='highlight-thumbnail' />
                                     </div>
                                 )
                             })}                            

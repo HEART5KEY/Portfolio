@@ -2,10 +2,8 @@ import './App.css'
 import './index.css'
 import Header from './assets/components/Header'
 import StrengthCard from './assets/components/StrengthCard'
-import { useState } from 'react'
 import Tags from './assets/components/Tags'
 import { projects } from './works.json'
-import { getImageurl } from './methods'
 import { useNavigate } from 'react-router'
 
 function App() {
@@ -51,7 +49,7 @@ function App() {
                 return (
                   <div onClick={() => {navigate(`/Portfolio/Works?personal=${project.personal}&id=${project.key}`)}} className='highlight-container'>
                     {project.media.length > 1 ? <div className='highlight-plus'>+</div> : ''}
-                    <img className='highlight-thumbnail' src={getImageurl(`./assets/media/works/${project.media[0]}.jpg`)} alt='highlight-thumbnail' />
+                    <img className='highlight-thumbnail' src={`/Portfolio/works/${project.media[0]}.jpg`} alt='highlight-thumbnail' />
                   </div>
                 )
               })
